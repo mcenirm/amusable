@@ -11,4 +11,17 @@ function Import-MUSARole {
     )
     "TO BE IMPLEMENTED"
 }
-Export-ModuleMember -Function Import-MUSARole
+
+function Import-MUSAUser {
+    <#
+        .SYNOPSIS
+            Prepares a user based on custom MUSA configuration.
+    #>
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [String]
+        $Name
+    )
+    "TO BE IMPLEMENTED"
+}

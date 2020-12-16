@@ -1,5 +1,6 @@
-#requires -Version 3.0
+#Requires -Version 5.1
 
-Import-Module $PSScriptRoot\..\MUSA\MUSA.psd1 -Verbose
+Import-Module -Name $PSScriptRoot\..\MUSA\MUSA.psm1 -Verbose -Force -ErrorAction Stop
 
-Import-MUSARole test
+Import-MUSARole 'Test Role'
+Import-MUSAUser 'Test User'
